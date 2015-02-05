@@ -1,0 +1,15 @@
+toulouse-pm@pm.org,
+sophia@mongueurs.net,
+lyon@mongueurs.net,
+paris@mongueurs.net,
+grenoble@mongueurs.net,
+geneve@mongueurs.net,
+perl@mongueurs.net,
+adherents@mongueurs.net
+
+autres que mongeurs
+adherents@lists.parinux.org,
+francilux@lists.parinux.org
+
+contact programmez.com
+fmazue@programmez.com

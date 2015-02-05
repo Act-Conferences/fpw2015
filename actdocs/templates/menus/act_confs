@@ -1,0 +1,16 @@
+[% IF global.conferences.present.merge( global.conferences.future ).size %]
+<h3 class="visible-desktop">
+  <a href="http://act.mongueurs.net/conferences.html">{{Other conferences}}</a>
+</h3>
+<h3 class="hidden-desktop" style="padding-left:10px;">
+  <a href="http://act.mongueurs.net/conferences.html">{{Other conferences}}</a>
+</h3>
+<div class="row-fluid visible-desktop">
+    <ul>
+      [% FOREACH c = global.conferences.present.merge( global.conferences.future ) %]
+        [% LAST IF loop.count > 10 %]
+        [% WRAPPER menus/item %]<a href="[% c.url %]">[% c.name %]</a>[% END %]
+      [% END %]
+    </ul>
+</div>
+[% END %]

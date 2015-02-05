@@ -1,0 +1,7 @@
+<dd>
+    [% FOR y IN range %]
+        [% WRAPPER menus/footer_item %]
+            <a href="/[% y %]/"><t><fr>Journ&eacute;es Perl [% y %]</fr><en>French Perl Workshop [% y %]</en></t></a>
+        [% END %]
+    [% END %]
+</dd>

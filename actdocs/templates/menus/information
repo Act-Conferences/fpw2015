@@ -1,0 +1,28 @@
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+  <t>
+    <en>Practical Information</en>
+    <fr>Infos Pratiques</fr>
+  </t>
+  <b class="caret"></b>
+</a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    [% WRAPPER menus/item %]
+        <a href="[% make_uri('wiki') %]">Wiki</a>
+    [% END %]
+    [% WRAPPER menus/item %]
+        <a href="[% make_uri('travel.html') %]">
+            <t>
+                <en>Maps</en>
+                <fr>Acc&egrave;s</fr>
+            </t>
+        </a>
+    [% END %]
+    [% WRAPPER menus/item %]
+        <a href="[% make_uri('accommodation.html') %]">
+            <t>
+                <en>Accommodation</en>
+                <fr>H&eacute;bergement</fr>
+            </t>
+        </a>
+    [% END %]
+</ul>

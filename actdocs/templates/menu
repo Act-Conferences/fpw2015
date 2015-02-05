@@ -1,0 +1,110 @@
+    <li>
+        [% IF global.request.user %]
+            <a class="pull-right" style="border:none;margin-top: 1px;" href="[% make_uri('main') %]">[% global.request.user.login %]</a>
+        [% END %]
+        [% PROCESS menus/languages %]
+    </li>
+    [% IF global.request.user %]
+        <li>
+            <a href="[% make_uri('logout') %]">{{Logout}}</a>
+        </li>
+    [% ELSE %]
+        <li>
+            <a href="[% make_uri('register') %]">{{New user}}</a>
+        </li>
+        <li>
+            <a href="[% make_uri('main') %]">{{Log in}}</a>
+        </li>
+    [% END %]
+    <li class="dropdown">
+      <a href="[% make_uri('sponsors.html') %]">
+        <t>
+          <fr>
+            Sponsors
+          </fr>
+          <en>
+            Sponsors
+          </en>
+        </t>
+      </a>
+    </li>
+    <li class="dropdown">
+        [% PROCESS menus/users %]
+    </li>
+    [% IF global.config.talks_show_schedule OR global.request.user.is_talks_admin %]
+        [% WRAPPER menus/item %]
+            <a href="[% make_uri('schedule') %]">
+                {{Schedule}}
+            </a>
+        [% END %]
+    [% END %]
+
+    <li class="dropdown">
+        [% PROCESS menus/talks %]
+    </li>
+    <li class="dropdown">
+        [% PROCESS menus/information %]
+    </li>
+    <li>
+        <a href="[% make_uri('conduct.html') %]">
+          <t>
+            <fr>
+              Code de conduite
+            </fr>
+            <en>
+              Code of conduct
+            </en>
+          </t>
+        </a>
+    </li>
+    <li class="dropdown">
+      <a href="[% make_uri('sponsorship.html') %]">
+        <t>
+          <fr>
+            Sponsoriser
+          </fr>
+          <en>
+            Sponsorship
+          </en>
+        </t>
+      </a>
+    </li>
+
+    [% IF global.request.user.is_news_admin ||
+          global.request.user.is_admin      ||
+          global.request.user.is_treasurer  %]
+            </li>
+        [% IF global.request.user.is_news_admin %]
+            <li>
+                [% WRAPPER menus/item %]
+                    <a href="[% make_uri('newsadmin') %]">{{News Administration}}</a>
+                [% END %]
+            </li>
+            <li>
+                [% WRAPPER menus/item %]
+                    <a href="[% make_uri('newevent') %]"><t><fr>Nouvel événement</fr><en>New event</en></t></a>
+                [% END %]
+            </li>
+        [% END %]
+        [% IF global.request.user.is_admin %]
+            <li>
+                [% WRAPPER menus/item %]
+                    <a href="[% make_uri('rights') %]">{{Rights management}}</a>
+                [% END %]
+            </li>
+        [% END %]
+        [% IF global.request.user.is_treasurer %]
+            <li>
+                  [% WRAPPER menus/item %]
+                    <a href="[% make_uri('payments') %]">{{Payments}}</a>
+                  [% END %]
+                  [% WRAPPER menus/item %]
+                    <a href="[% make_uri('csv/payments') %]">{{Payments}} (CSV)</a>
+                  [% END %]
+                  [% WRAPPER menus/item %]
+                    <a href="[% make_uri('csv/payment_items') %]">{{Payment Details}} (CSV)</a>
+            </li>
+            [% END %]
+        [% END %]
+    [% END %]
+

@@ -1,0 +1,35 @@
+                     Les Journées Perl 2015 (fr)
+                     ===========================
+
+Le vendredi 26 et le samedi 27 juin 2015, les Mongueurs de Perl
+organisent la douzième conférence "Les Journées Perl". Cet événement
+rassemblera à la Cité des Sciences à Paris les utilisateurs de Perl,
+du débutant à l'expert. Ce sera l'occasion de rencontrer de nombreux
+grands noms de la communauté Perl francophone. 
+
+1. Appel à présentation 
+~~~~~~~~~~~~~~~~~~~~~~~
+Pour être un succès, cette conférence a besoin d'orateurs et de 
+présentations. Le français est préféré, mais l'anglais est admis. 
+Cette année le thème principal de la conférence est "Perl en pratique".
+Vous créez des applications en Perl. Vous connectez des outils entre eux.
+Partagez vos usages de ce langage et venez présenter votre travail ! 
+
+2. Perl en entreprise 
+~~~~~~~~~~~~~~~~~~~~~
+Vous utilisez Perl dans votre entreprise ? Il est un élement central de
+votre architecture ? Il vous aide au quotidien à faire les tâches
+répétitives et rébarbatives ? Venez en parler et partager votre expérience de
+professionnel avec nous !
+
+3. Faites circuler l'information ! 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Les Journées Perl 2015 ont besoin d'orateurs... et bien 
+sûr de public. Transmettez l'information à vos collègues, à vos amis, à 
+votre service des Ressources Humaines, si vous pensez qu'ils peuvent 
+faire passer l'information. Nous espérons vous accueillir nombreux à la Cité des
+Sciences.
+Les Mongueurs de Perl.
+
+Renseignements et inscriptions : <http://www.journeesperl.fr/>
+Contact : contact-fpw chez mongueurs point net

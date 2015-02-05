@@ -1,0 +1,204 @@
+[% WRAPPER ui title = global.conference.name %]
+
+<h2>
+  <t>
+    <fr>
+      Notre partenaire
+    </fr>
+    <en>
+      Our partnership
+    </en>
+  </t>
+</h2>
+
+<div class="topcontent">
+  <p>
+    <t>
+      <fr>Merci aux entreprises qui nous aident à préparer les Journées Perl 2015</fr>
+      <en>We want to thank the companies that help us make the French Perl Workshop 2015</en>
+    </t>
+  </p>
+</div>
+
+[% sponsors = [] %]
+[% BLOCK sponsor %]
+[% url_show = url_show || url %]
+<div class="litcontent">
+  <a name="[% lnk %]"></a>
+  <h3>
+    [% name %]
+  </h3>
+  <a class="left" href="[% url %]"><img class="icon" src="[% make_uri('img')%]/[% img %]" alt="[% name %]" title="[% name %]" /></a>
+  <p>
+    [% content %]
+  </p>
+  <p><a href="[% url %]">&nbsp;&nbsp;»&nbsp;[% url_show %]</a></p>
+  <hr/>
+</div>
+[% END %]
+
+<!--  <h2><t><fr>Partenaire</fr><en>Partners</en></t></h2>  -->
+
+
+[% WRAPPER sponsor
+  img = 'logo.citesciences.large.png'
+  nom = "Cité des Sciences et de l'Industrie"
+  url = "http://www.cite-sciences.fr/"
+  lnk = 'cite-sciences'
+  %]
+  <t>
+    <fr>
+      <p>
+      Le Carrefour Numérique est un lieu de découverte, d'apprentissage et 
+      d'initiation aux technologies de l'information et de la communication 
+      au sein de la Cité des Sciences.
+      </p>
+      <p>
+      “Cité” dans la cité, la Cité des Sciences et de l'Industrie regroupe 
+      un grand nombre d’activités mêlant le meilleur de la culture scientifique 
+      et du loisir culturel&nbsp;: expositions, bibliothèque, conférences et débats, 
+      médiation culturelle, traitement de l’actualité, espaces ressources ou 
+      de services et une offre exceptionnelle pour les enfants.<br />
+      Depuis sa création, la Cité n’a cessé de faire le lien entre la science 
+      et les grands débats de société en mettant en lumière les questions que 
+      suscitent progrès technique et innovation&nbsp;: questions environnementales, 
+      géo-économiques, éthiques.<br />
+      Pour illustrer ce lien, les équipes de la Cité proposent dans ses différents 
+      espaces des ateliers, jeux scientifiques, débats et conférences sur les 
+      enjeux contemporains.
+      </p>
+      <p>
+      Construit sur les spécificités et les identités propres du Palais de la 
+      découverte et de la Cité des sciences et de l’industrie, universcience 
+      reflète l’ambition d’un grand centre de science ancré dans le XXIe siècle.
+      </p>
+    </fr>
+    <en>
+      The City of Science and Industry was established by the Decree of
+      18 February 1985 amended in July 1998 and October 2004.
+      The decree of 24 February 2006 was given a new status. This is a public
+      national à caractère industriel et commercial (EPIC) under
+      the supervision of the ministers responsible for culture and research.
+      It was opened on 13 March 1986.
+      
+      The institution's mission is to "make available to all public
+      scientific, technical and industrial, as well as present social issues
+      related to their development. It contributes to the dissemination
+      in France and abroad."
+    </en>
+  </t>
+[% END %]
+
+<h2>
+  <t>
+    <fr>
+      Nos sponsors
+    </fr>
+    <en>
+      Our sponsors
+    </en>
+  </t>
+</h2>
+
+[% WRAPPER sponsor
+   img = 'perl6.png'
+   nom = 'Perl 6 Developers Community'
+   url = 'http://www.perl6.org/'
+   lnk = 'WenZPerl'
+%]
+  <t>
+    <fr>
+      <p>
+	  Camelia est le porte-parole de Perl 6, la courageuse petite
+	  soeur de Perl 5. Tout comme sa mondialement connue grande
+	  soeur, Perl 6 veut mettre en avant les idéaux élévés de la 
+	  Communauté Perl.
+      </p>
+      <p>
+      Perl 6 est actuellement dévéloppée par sa propre équipe de 
+	  volontaires enthousiastes. Nous ppvons vous aider aussi. La
+	  seule dont vous ayez besoin est de savoir être sympa avec 
+	  pleins de gens différents (et avec les papillons aussi).<br />
+	  N'hésitez pas à vous rendre sur le canal #perl6 sur irc.perl.org.
+	  Il y aura quelqu'un prêt à vous aider à mettre le pied à l'étrier.
+      </p>
+    </fr>
+    <en>
+      <p>
+	  Camelia is the spokesbug for Perl 6, the spunky little sister of 
+	  Perl 5. Like her world-famous big sister, Perl 6 intends to carry 
+	  forward the high ideals of the Perl community.
+      </p>
+	  <p>
+	  Perl 6 is currently being developed by a team of dedicated and 
+	  enthusiastic volunteers. You can help too. The only requirement 
+	  is that you know how to be nice to all kinds of people (and 
+	  butterflies).<br />
+	  Go to #perl6 (irc.freenode.net) and someone will be glad to help you get started.
+	  </p>
+    </en>
+  </t>
+[% END %]
+
+<h2>
+  <t>
+    <fr>
+      Sponsors media
+    </fr>
+    <en>
+      Media sponsors
+    </en>
+  </t>
+</h2>
+
+[% WRAPPER sponsor
+  img = 'logo-dvp-400x165.png'
+  nom = "Developpez.com"
+  url = "http://perl.developpez.com"
+  lnk = 'developpez'
+  %]
+  <t>
+    <fr>
+      <p>
+Avec plus de 5000 messages quotidiens sur les forums et jusqu'à 220 000 visites par jour, le club Developpez.com est la plus grande communauté
+internationale des professionnels en informatique de langue française <i>(France, Belgique, Luxembourg, Suisse, Canada, Afrique et Asie francophone, etc.)</i>. C’est la raison pour laquelle il nous
+est impossible de répondre à tous vos emails : nous ne répondrons pas par emails à vos questions techniques, car vous devez utiliser le
+<a target="blank" href="http://www.developpez.net/forums/index.php?c=1">forum d'entraide des professionnels en informatique</a> qui a été spécialement créé pour cela. Afin de faciliter votre
+orientation pour nous contacter, utilisez les <a target="blank" href="http://www.developpez.net/forums/index.php?c=1">forums</a> ou reportez-vous à la liste ci-dessus pour déterminer rapidement
+l'interlocuteur que vous recherchez. Le <a href="http://club.developpez.com/club/">Club</a>, c'est aussi une équipe de plus de 900 bénévoles hébergés gratuitement par www.developpez.com qui se rendent disponibles pour vous procurer toutes ces ressources gratuitement.
+      </p>
+    </fr>
+    <en>
+      <p>
+Avec plus de 5000 messages quotidiens sur les forums et jusqu'à 220 000 visites par jour, le club Developpez.com est la plus grande communauté
+internationale des professionnels en informatique de langue française <i>(France, Belgique, Luxembourg, Suisse, Canada, Afrique et Asie francophone, etc.)</i>. C’est la raison pour laquelle il nous
+est impossible de répondre à tous vos emails : nous ne répondrons pas par emails à vos questions techniques, car vous devez utiliser le
+<a target="blank" href="http://www.developpez.net/forums/index.php?c=1">forum d'entraide des professionnels en informatique</a> qui a été spécialement créé pour cela. Afin de faciliter votre
+orientation pour nous contacter, utilisez les <a target="blank" href="http://www.developpez.net/forums/index.php?c=1">forums</a> ou reportez-vous à la liste ci-dessus pour déterminer rapidement
+l'interlocuteur que vous recherchez. Le <a href="http://club.developpez.com/club/">Club</a>, c'est aussi une équipe de plus de 900 bénévoles hébergés gratuitement par www.developpez.com qui se rendent disponibles pour vous procurer toutes ces ressources gratuitement.
+      </p>
+    </en>
+  </t>
+  [% END %]
+<p>
+  [% WRAPPER sponsor
+  img = 'logo.glmf.large.png'
+  name = 'Gnu/Linux Magazine France'
+  url = 'http://www.unixgarden.com/'
+  lnk = 'GLMF'
+  %]
+  <t>
+    <fr><p>GNU/Linux Magazine France, c'est LE magazine mensuel de l'administration et du développement sur systèmes UNIX&nbsp;!<br>
+Le premier magazine français 100 % Linux se démarque grâce à une ligne rédactionnelle résolument technique et pédagogique.<br>
+Les rubriques résument à elles seules les attentes de leurs lecteurs : Netadmin, Sysadmin, Code(s), Embarqué, Kernel, Repères, Hack&hellip;</p>
+    </fr>
+    <en><p>GNU/Linux Magazine France, this is THE monthly french magazine of the administration and development on UNIX systems!<br>
+The first 100% Linux french magazine stands out with a decidedly technical and educational editorial line.<br>
+The sections summarize alone the expectations of their readers: Netadmin, Sysadmin, Code(s), Embedded, Kernel, landmarks, Hack&hellip;</p>
+    </en>
+  </t>
+  [% END %]
+</p>
+
+
+[% END %]

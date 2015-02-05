@@ -1,0 +1,8 @@
+<!-- vim:ft=html:
+-->
+[% FILTER collapse %]
+<ul class="nav nav-tabs nav-stacked" role="menu" aria-labelledby="dLabel">
+    [% PROCESS menu %]
+</ul>
+[% END %]
+

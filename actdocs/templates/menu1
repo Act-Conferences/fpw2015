@@ -1,0 +1,20 @@
+<div class="nav-collapse collapse">
+    <ul class="nav">
+        <li><a href="[% make_uri_info() %]"><t><fr>Accueil</fr><en>Welcome</en></t></a></li>
+        <li><a href="[% make_uri('schedule') %]">{{Schedule}}</a></li>
+    <li class="dropdown">
+        [% PROCESS menus/users %]
+    </li>
+
+        <li><a href="[% make_uri('wiki') %]"><t><fr>Infos pratiques</fr><en>Wiki</en></t></a></li>
+    <!-- 
+        <li><a href="[% make_uri('news') %]">{{News}}</a></li>
+        <li><a href="#"><t><fr>Screencasts</fr><en>Screencasts</en></t></a></li>
+        <li><a href="[% make_uri('accommodation.html') %]"><t><fr>H&eacute;bergement</fr><en>Accomodations</en></t></a></li>
+    -->
+        <li><a href="[% make_uri('maps.html') %]"><t><fr>Accès</fr><en>Coming in</en></t></a></li>
+        <li>[% PROCESS menus/sponsors %]</li>
+        <li><a href="[% make_uri('news') %]">{{News}}</a></li>
+        <li><a type="application/atom+xml" href="[% global.request.base_url %][% make_uri_info('atom', global.request.language) %].xml" title="Breaking News FPW2012" ><img src="[% make_uri_info('img', 'feed-icon.png') %]" alt="[Atom]" /></a></li>
+    </ul>
+</div><!--/.nav-collapse -->

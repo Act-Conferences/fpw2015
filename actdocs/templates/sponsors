@@ -1,0 +1,46 @@
+
+
+<center>
+  [% WRAPPER menus/section %]
+  <a href="[% make_uri('sponsors.html') %]">Sponsors</a>
+  [% END %]
+
+    [% isponsors = [] %]
+    [% BLOCK isponsor %]
+    [% WRAPPER menus/section %]
+    <p><a class="icon" href="[% url %]"><img class="icon" width="225" src="[% make_uri('img')%]/[% img %]" alt="[% name %]" title="[% name %]" /></a></p>
+    [% END %]
+    [% END %]
+
+    [% WRAPPER isponsor
+      img = 'logo.citesciences.small.png'
+      name = "Cité des Sciences et de l'Industrie"
+      url = 'http://www.cite-sciences.fr/'
+    %]
+    [% END %]
+    
+[% WRAPPER isponsor
+   img = 'perl6.png'
+   nom = 'Perl 6 Developers Community'
+   url = 'http://www.perl6.org/'
+   lnk = 'WenZPerl'
+%]
+    [% END %]
+
+    [% WRAPPER isponsor
+    img = "logo-dvp-200x82.png"
+    name = "Developpez.com"
+    url = "http://perl.developpez.com/"
+    lnk = "developpez"
+    %]
+    [% END %]
+    
+    [% WRAPPER isponsor
+    img = "logo.glmf.large.png"
+    name = "Gnu/Linux Magazine France"
+    url = "http://www.unixgarden.com/"
+    lnk = "GMLF"
+    %]
+    [% END %]
+</center>
+

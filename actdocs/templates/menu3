@@ -1,0 +1,6 @@
+<div class="nav-collapse collapse">
+  <ul class="nav">
+    [% PROCESS menu %]
+  </ul>
+</div><!--/.nav-collapse -->
+

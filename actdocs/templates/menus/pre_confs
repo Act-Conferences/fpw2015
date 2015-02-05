@@ -1,0 +1,16 @@
+<h3 class="visible-desktop">
+    <t><fr>Les pr&eacute;c&eacute;dentes Journ&eacute;es Perl</fr><en>Former FPW</en></t>
+</h3>
+<h3 class="hidden-desktop" style="padding-left:10px;">
+    <a href="[% make_uri('fpw.html') %]"><t><fr>Pr&eacute;c&eacute;dentes Journ&eacute;es Perl</fr><en>Former FPW</en></t></a>
+</h3>
+<div class="row-fluid visible-desktop">
+      <ul>
+        [% FOR y IN [ 2004..2013 ] %]
+          [% WRAPPER menus/item %]
+            <a href="/[% y %]/"><t><fr>Journ&eacute;es Perl [% y %]</fr><en>French Perl Workshop [% y %]</en></t></a>
+          [% END %]
+        [% END %]
+      </ul>
+</div>
+
