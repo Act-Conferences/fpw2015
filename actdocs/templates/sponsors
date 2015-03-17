@@ -19,28 +19,5 @@
     %]
     [% END %]
     
-[% WRAPPER isponsor
-   img = 'perl6.png'
-   nom = 'Perl 6 Developers Community'
-   url = 'http://www.perl6.org/'
-   lnk = 'WenZPerl'
-%]
-    [% END %]
-
-    [% WRAPPER isponsor
-    img = "logo-dvp-200x82.png"
-    name = "Developpez.com"
-    url = "http://perl.developpez.com/"
-    lnk = "developpez"
-    %]
-    [% END %]
-    
-    [% WRAPPER isponsor
-    img = "logo.glmf.large.png"
-    name = "Gnu/Linux Magazine France"
-    url = "http://www.unixgarden.com/"
-    lnk = "GMLF"
-    %]
-    [% END %]
 </center>
 
