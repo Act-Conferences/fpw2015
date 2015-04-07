@@ -18,6 +18,15 @@
       url = 'http://www.cite-sciences.fr/'
     %]
     [% END %]
+
+    [% WRAPPER isponsor
+    img = "logo-dvp-200x82.png"
+    name = "Developpez.com"
+    url = "http://perl.developpez.com/"
+    lnk = "developpez"
+    %]
+    [% END %]
+    
     
 </center>
 
