@@ -27,6 +27,14 @@
     %]
     [% END %]
     
+    [% WRAPPER isponsor
+      img = 'Criteo_Labs_RGB_small.png'
+      nom = 'Criteo labs'
+      url = 'http://labs.criteo.com/'
+      lnk = 'criteolabs'
+    %]
+    [% END %]
+
     
 </center>
 
