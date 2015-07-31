@@ -1,0 +1,45 @@
+
+== Paramétrage FPW 2015 ==
+
+'''Inkscape'''
+    * faire le Template.svg
+    * copier la partie wiki (titre -- auteur -- [lien dans Act]) dans data.txt
+    * ./instantiate.pl data.txt  ==> génère les pages de titres
+    * 'export bitmap' des svg en PNG
+
+'''OpenShot :'''
+
+    * créer le projet en "768x576 4:3 PAL" pour les mkv, et avi du CarrNum²
+    * '''panneau titre : piste 2''', durée 3 sec, pas d'audio, pas de fondu
+    * '''panneau sponsors : piste 2''', durée 3 sec, pas d'audio, fondu 1 sec en sortie
+    * '''logo Mongueurs : piste 2''', durée 299 sec, pas d'audio, taille normale en bas à droite, à répéter
+    * '''le talk : piste 1''', début 5 sec, fondu entrée 2 sec pour le 1er, fondu en sortie 2 sec pour le dernier
+    * '''export video''' : Profil "Site Web", destination YouTube-HD, Profil video HD720p 25 fps, qualité moyenne (élévée = trop grosse taille du mp4 par rapport au gain)
+
+'''Upload :'''
+    * You Tube
+        * Titre: [FPW2015] <talk>
+        * Description :
+          par <speaker>
+          <lien act>
+          <description sur Act>
+    *
+        * Tags: <tags d'Act>, journeesperl, fpw, fpw2015,perl
+    * Parms avancés
+        * Décocher "Autoriser les commentaires vidéo"
+        * Sous-titres : "Jamais diffuser aux US"
+        * Licence : Creative Commons
+        * Lieu : Paris
+        * Date:  26 ou 27 juin
+        * Désactiver la 3D
+
+    * Daily Motion
+        * Titre: [FPW2015] <talk>
+        * Description :
+          par <speaker>
+          >> <lien act>
+          <description sur Act>
+    *
+        * Tags: <tags d'Act>, journeesperl, fpw, fpw2015,perl
+        * Cocher Creative Commons
+

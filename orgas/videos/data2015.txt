@@ -1,0 +1,11 @@
+Mort aux cons, persistence -- Stéphane Payrard -- [http://journeesperl.fr/fpw2015/talk/6208]
+Programmation fonctionnelle en Perl -- Laurent Rosenfeld -- [http://journeesperl.fr/fpw2015/talk/6213]
+Open Food Facts : une base de données collaborative de produits en Perl -- Stéphane Gigandet -- [http://journeesperl.fr/fpw2015/talk/6214]
+keep calm and read the perl script -- Marc Chantreux -- [http://journeesperl.fr/fpw2015/talk/6215]
+Perl dans la distribution Fedora -- Emmanuel Seyman -- [http://journeesperl.fr/fpw2015/talk/6219]
+Pilotage commercial en Perl -- Richard Thibert -- [http://journeesperl.fr/fpw2015/talk/6256]
+Les nouveautés de Perl 5.22 -- Sébastien Aperghis-Tramoni -- [http://journeesperl.fr/fpw2015/talk/6301]
+Stockage et analyse temps réel d'événements avec Riak chez Booking.com -- Damien Krotkine -- [http://journeesperl.fr/fpw2015/talk/6304]
+Couverture de code : quelques précisions -- Jean Forget -- [http://journeesperl.fr/fpw2015/talk/6309]
+A bas crond ! Vive Oozie ! -- David Morel -- [http://journeesperl.fr/fpw2015/talk/6310]
+
