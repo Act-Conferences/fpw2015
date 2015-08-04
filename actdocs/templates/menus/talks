@@ -2,6 +2,9 @@
 
 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
     [% WRAPPER menus/item %]
+        <a href="[% make_uri('wiki?node=Videos') %]">{{Videos}}</a>
+    [% END %]
+    [% WRAPPER menus/item %]
         <a href="[% make_uri('talks') %]">
             {{Presentations}}
         </a>
