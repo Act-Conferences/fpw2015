@@ -36,8 +36,8 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
     <!-- Pour Facebook -->
-    <meta property="og:image" content="[% global.request.base_url %][% make_uri_info('img', 'logo_mongueurs.png') %]" />
-    <link rel="image_src" content="[% global.request.base_url %][% make_uri_info('img', 'logo_mongueurs.png') %]" />
+    <meta property="og:image" content="[% global.request.base_url %][% make_uri_info('img', 'mongueurs_128x128.png') %]" />
+    <link rel="image_src" content="[% global.request.base_url %][% make_uri_info('img', 'mongueurs_128x128.png') %]" />
 
   </head>
 
